@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display:flex;
+    align-items:center;
+
+}
+#logo{
+    margin: 10px 10px ;
+}
+#logo img{
+    margin: 10px 10px ;
+    height:60px;
+    width:160px;
+
+}
+#navbar{
+    top:0px;
+    position:relative;
+    background-color:brown;
+    border-bottom: 5px solid black;
+    height:90px;
+}
+#navbar ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar::before{
+    content:" ";
+    
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.5;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding: 3px 22px;
+    border-radius:20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+  
+}
+#home{
+    display:flex;
+    flex-direction:column;
+    padding:50px 200px;
+    justify-content: center;
+    align-items: center;
+    height:250px;
+}
+#home::before{
+    content:" ";
+    background:url(images/bgyellow.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    justify-content: center;
+    position:absolute;
+    height:50%;
+    margin-top: 20px;
+    width:100%;
+    z-index: -1;
+    opacity:1;
+}
+#home h1{
+    color:red;
+    text-align: center;
+    text-decoration: underline;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#home p{
+    color:brown;
+    font-size: 1.3rem;
+    font-weight: 900;}
+#tips{
+    display:flex;
+     
+}
+#tips #box{
+    margin:24px;
+    display:flex;
+    flex-direction: column;
+}
+.primaryheading2{
+    text-align: center;
+    font-size: 2.8rem;
+}
+#tips #box{
+    border:2px solid black;
+    margin:3px;
+    padding:34px;
+    border-radius: 28px;
+    background-color: rgb(219, 216, 212);
+}
+#tips #box h2{
+    text-align: center;
+}
+#tips #box p{
+ 
+    text-align: center;
+}
+#tips #box button{
+   width:80px;
+   align-content:center;
+   margin:auto;
+  height: 40px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+   
+}
+ 
+#tips #box button a:hover{
+    color:darkred;
+    
+    font-size: 1.5rem;
+}
+#tips #box img{
+    height:100px;
+    width:200px;
+    margin:auto;
+    display:block;
+}
+ 
+.primaryheading{ /*utility*/
+    font-size: 3.8rem;
+    padding:10px;
+    border: 2px solid white;
+    background-color:burlywood;
+}
+.secondaryheading{
+    font-size: 2.8rem;
+}
+.btn{
+    padding:6px 20px;
+    color:white;
+    border:3px solid black;
+    margin:17px;
+    font-size:1.5rem;
+    border-radius:10px;
+}
+ 
+.btn a:hover{
+    color:red;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+.center{
+    text-align: center;
+}
